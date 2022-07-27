@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncy Bounce Clouds</title>
+    <script src="https://www.kirupa.com/js/prefixfree.min.js"></script>
+    <h3>Hello There</h3> 
+    
+    <style>
+        #mainContent {
+            background-color: #A2BFCE;
+            border-radius: 4px;
+            padding: 10px;
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .cloud {
+            position: absolute;
+        }
+        #bigcloud{
+            animation: bobble 2s infinite;
+            margin-left: 100px;
+            margin-top: 15px;
+        }
+        #smallcloud{
+            animation: bobble 4s infinite;
+            margin-top: 65px;
+            margin-left: 200px;
+        }
+        @keyframes bobble {
+            0%{
+                transform: translate3d(50px, 40px, 0px);
+                animation-timing-function: ease-in;
+            }
+            0%{
+                transform: translate3d(50px, 40px, 0px);
+                animation-timing-function: ease-in;
+            }
+            0%{
+                transform: translate3d(50px, 40px, 0px);
+                animation-timing-function: ease-in;
+            }
+        }
+        h3{
+            animation-duration: 16s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slidein {
+            0%{
+                margin-left: 0%;
+            }
+            50%{
+                margin-left: 300%;
+            }
+            100%{
+                margin-left: 0%;
+            }
+        }
+
+    </style> 
+</head>
+<body>
+    <div class="mainContent">
+        <img id="bigcloud" alt="#" class="cloud" height="154" src="https://www.kirupa.com/images/bigCloud.png" width="238">
+        <img id="smallcloud" alt="#" class="cloud" height="103" src="https://www.kirupa.com/images/smallCloud.png" width="158">
+    </div>   
+</body>
+</html>
